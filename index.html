@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naser Uddin Mahmud | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/49c58e4e7f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("aU1_3UxGy7Pb1QrbQ");
+      })();
+    </script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo">Naser Uddin <span class="green">Mahmud</span></h1>
+          <ul id="sidemenu">
+            <li><a href="#header" style="--i:1;">Home</a></li>
+            <li><a href="#about" style="--i:2;">About</a></li>
+            <li><a href="#portfolio" style="--i:3;">Portfolio</a></li>
+            <li><a href="#contact" style="--i:4;">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h2>Hello! I'm</h2>
+
+          <h1>Naser Uddin <span class="">Mahmud</span></h1>
+          
+          <h2>A <span>Web Developer.</span></h2>
+
+          <a href="assets/Resume of Naser Mahmud.pdf" download class="btn"
+            ><i class="fa-solid fa-download"></i> Download Resume</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <h2 class="sub-tittle">About Me</h2>
+        <div class="row">
+          <div class="about-col-left">
+            <img src="assets/image.png" />
+          </div>
+
+          <div class="about-col-right">
+            <p>
+              I am Naser Uddin Mahmud. I'm from Dhaka, Bangladesh. I have
+              completed my MBA from the University of Dhaka. Previously, I
+              worked as an HR Business Partner at Walton Hi-tech industries ltd.
+              Despite being from a non-programming background I have always been
+              curious about technologies and how they work. So I have decided to
+              learn web development. I believe that with enough curiosity and
+              dedication one can learn and grow as a web developer. I am always
+              prepared to learn new things and grow.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Expertise</span><br />HTML 5 | CSS3 | Tailwind |
+                  Bootstrap | Daisy UI | React JS | React Router
+                </li>
+                <li>
+                  <span>Comfortable</span><br />JavaScript | Express JS |
+                  MongoDB | Firebase (Authentication & hosting)
+                </li>
+                <li>
+                  <span>Familiar</span><br />JWT | Axios | TanStack Query |
+                  Stripe
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />
+                  Web Development course from Programming hero
+                </li>
+                <li>
+                  <span>2018</span><br />
+                  MBA from University of Dhaka
+                </li>
+                <li>
+                  <span>2015</span><br />
+                  BBA from Ahsanullah University of Science & Technology
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <div class="sub-tittle">Portfolio</div>
+        <div class="work-list">
+          <div class="project">
+            <div class="work work-1"></div>
+            <div class="description">
+              <h2>Sports Summer</h2>
+              <p>
+                This is a full stack project. A website for a summer school
+                based on different sports
+              </p>
+              <h3>Features</h3>
+              <ul>
+                <li>
+                  Listing of different sports classes to be enrolled by students
+                  after successful payment.
+                </li>
+                <li>
+                  A user approved as an instructor by an administrator can list
+                  new classes.
+                </li>
+                <li>
+                  An administrator can change the role of a user as an
+                  instructor or another administrator, approve or reject a class
+                  and give feedback.
+                </li>
+              </ul>
+              <h3>Technologies</h3>
+              <p>
+                React | Tailwind | Daisy UI | Stripe | JWT| Axios | TanStack
+                Query | MongoDB | Firebase | Vercel
+              </p>
+              <div class="project-links">
+                <a href="https://sports-summer.web.app/" target="_blank"
+                  >Live Site</a
+                >
+                <a
+                  href="https://github.com/NaserUddinMahmud/sports-summer-client"
+                  target="_blank"
+                  >Client Side Code</a
+                >
+                <a
+                  href="https://github.com/NaserUddinMahmud/sports-summer-server"
+                  target="_blank"
+                  >Server Side Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project project-2">
+            <div class="description">
+              <h2>ActionCon</h2>
+              <p>
+                This is a full stack project. A website for an action figure toy
+                store
+              </p>
+              <h3>Features</h3>
+              <ul>
+                <li>
+                  Toys from different sellers are up for sale in this website.
+                </li>
+                <li>A logged in user can list a toy for sale.</li>
+                <li>
+                  Logged in user can also update and delete a toy he/she has
+                  listed.
+                </li>
+              </ul>
+              <h3>Technologies</h3>
+              <p>React | Tailwind | Daisy UI | MongoDB | Firebase | Vercel</p>
+              <div class="project-links">
+                <a href="https://action-con.web.app/" target="_blank"
+                  >Live Site</a
+                >
+                <a
+                  href="https://github.com/NaserUddinMahmud/action-con-client"
+                  target="_blank"
+                  >Client Side Code</a
+                >
+                <a
+                  href="https://github.com/NaserUddinMahmud/action-con-server"
+                  target="_blank"
+                  >Server Side Code</a
+                >
+              </div>
+            </div>
+            <div class="work work-2"></div>
+          </div>
+          <div class="project">
+            <div class="work work-3"></div>
+            <div class="description">
+              <h2>CuisineCastle</h2>
+              <p>This is a frontend project. A website for Thai food recipe.</p>
+              <h3>Features</h3>
+              <ul>
+                <li>
+                  Recipes from different Thai chefs are listed in this site.
+                </li>
+                <li>A logged in user can view recipes of a selected chef.</li>
+                <li>
+                  If a logged in user selects a recipe as favorite, he/she is
+                  notified, and the button is disabled.
+                </li>
+              </ul>
+              <h3>Technologies</h3>
+              <p>React | Tailwind | Daisy UI | Firebase | Vercel</p>
+              <div class="project-links">
+                <a href="https://cuisine-castle.web.app/" target="_blank"
+                  >Live Site</a
+                >
+                <a
+                  href="https://github.com/NaserUddinMahmud/cuisine-castle-client"
+                  target="_blank"
+                  >Client Side Code</a
+                >
+                <a
+                  href="https://github.com/NaserUddinMahmud/cuisine-castle-server"
+                  target="_blank"
+                  >Server Side Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-tittle">Contact Me</h2>
+            <p>
+              <i class="fa-regular fa-envelope"></i> maumudbappy01@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +8801675565348</p>
+            <div class="social-icons">
+              <a href="https://github.com/NaserUddinMahmud" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/naser-mahmud-6a2323280/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <div class="form">
+              <p>Name</p>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+                class="form-control"
+                required
+              />
+              <p>Email</p>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Your Email"
+                required
+              />
+              <p>Message</p>
+              <textarea
+                name="message"
+                id="message"
+                rows="8"
+                class="form-control"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn-submit" onclick="sendMail()">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+       <div class="footer-content">
+        <h4>Naser Uddin <span class="green">Mahmud</span></h4>
+        <ul class="socials">
+          <li>
+            <a href="https://github.com/NaserUddinMahmud" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          </li>
+          <li>
+            <a
+            href="https://www.linkedin.com/in/naser-mahmud-6a2323280/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          </li>
+        </ul>
+        <p>Links</p>
+        <ul class="links">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023 Naser Uddin Mahmud</p>
+        </div>
+       </div>
+      </div>
+    </footer>
+
+    <script>
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+      const opentab = (tabname) => {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      };
+    </script>
+    <script>
+      const sidemenu = document.getElementById("sidemenu");
+      const openMenu = () => {
+        sidemenu.style.right = "6%";
+      };
+      const closeMenu = () => {
+        sidemenu.style.right = "-200px";
+      };
+    </script>
+    
+  </body>
+</html>
